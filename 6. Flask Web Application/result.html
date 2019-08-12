@@ -1,0 +1,12 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<div class="center-on-page">
+{% for d in data %}
+    <h1>{{d}}</h1>
+{% endfor %}
+<button onclick="goBack()">Back</button>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
